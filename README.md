@@ -17,6 +17,6 @@ A responsive Spotify Web Player UI clone built with semantic HTML5 and custom CS
 ## Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yashcod21er/<your-repo-name>.git
+   git clone https://github.com/yashcod21er/spotify-clone-frontend-.git
    ```
 2. Open `index.html` in your browser, or launch it with Live Server.
