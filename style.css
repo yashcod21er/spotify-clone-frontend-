@@ -1,0 +1,375 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    margin: 0.6rem;
+}
+
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin: 5px;
+
+}
+
+.maincontent{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    margin: 5px;
+    padding: 0 0.9rem;
+
+}
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.nav{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 0.5rem 0.7rem;
+}
+
+.nav-option{
+    line-height: 2.7rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.7rem;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+    
+}
+
+.nav-option a{
+    font-size: 1.1rem;
+    margin-left: 2rem;
+}
+
+.library{
+    border-radius: 10px;
+    background-color: #121212;
+    height: 100%;
+    margin-top: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    
+
+}
+
+#lib_icon{
+    height: 1.4rem;
+    width: 1.4rem;
+
+    font-size: 1.4rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.icons{
+    font-size: 1.5rem;
+    display: flex;
+    opacity: 0.5;
+}
+
+.icons i{
+    margin-right: 1rem;
+}
+.icons:hover{
+    opacity: 0.999;
+}
+
+.lib-boxes{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.8rem 0 1.75rem 0;
+    padding: 0.55rem  1rem;
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.box-p2{
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 700;
+    height: 2rem;
+    padding: 0.25rem 1rem;
+}
+
+.badge i {
+    font-size: 1.05rem;
+}
+
+.sticky-nav{
+    position: sticky;
+    background-color: #121212;
+    top: 0px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0.3rem;
+    margin: 0;
+    z-index: 10;
+     
+}
+
+.sticky-nav-options button{
+  margin: 0.4rem;
+}
+
+#ico{
+    margin: 1rem;
+    font-size: 1.18rem;
+}
+
+.sticky-nav-icons img{
+    margin: 0.5rem;
+}
+#blackbutton{
+    background-color: black;
+    color: #fff;
+}
+
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.card{
+    background-color: #232323;
+    width: 200px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.3rem;
+} 
+
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8s;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    height: 40%;
+    width: 95%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song{
+    width: 25%;
+}
+
+.player{
+    width: 50%;
+}
+
+.control{
+    width: 25%;
+}
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon{
+    height: 16px;
+    margin-right: 1.8rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+.playback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 50px;
+    height: 0.23rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: #1bd760;
+    margin-top: -6px;
+    border-radius: 50%;
+}
+
+.song-img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius:0.3rem ;
+    margin:0.5rem;
+}
+.song{
+    display: flex;
+    
+    align-items: center;
+    padding: 1rem;
+}
+.song-info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+.song-name {
+    
+    line-height: 0.5;
+    font-size: 0.9rem;
+    
+}
+.singer{
+     
+    line-height: 0.5;
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+.progress-bar1{
+    width: 30%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.progress-bar1::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 50px;
+    height: 0.18rem;
+    margin-bottom: 12px;
+}
+
+.progress-bar1::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.9rem;
+    width: 0.9rem;
+    background-color: #1bd760;
+    margin-top: -6px;
+    border-radius: 50%;
+    
+}
+
+.mic1{
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-bottom: 3px;
+}
+
+.queue1{
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-left: 3px;
+
+}
+.connect_to_device{
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-top: 3px;
+}  
+
+.control i{
+    font-size: 1rem;
+}
+
+.fullscreen{
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.volume{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-bottom: 6px;
+}
